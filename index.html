@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bukit Tungkuwiri - Wisata Jayapura Papua</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="header">
+    <div class="logo">BukitTungkuwiri<span>.id</span></div>
+
+    <!-- Tombol menu (muncul di mobile) -->
+    <button class="nav-toggle" id="navToggle" aria-label="Buka navigasi">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav>
+      <ul>
+        <li><a href="#hero">Beranda</a></li>
+        <li><a href="#tentang">Tentang Bukit</a></li>
+        <li><a href="#sejarah">Sejarah</a></li>
+        <li><a href="#aktivitas">Aktivitas</a></li>
+        <li><a href="#info">Info Perjalanan</a></li>
+        <li><a href="#lokasi">Lokasi</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero reveal" id="hero">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span>✨</span>
+        <span>Ikon Wisata Jayapura, Papua</span>
+      </div>
+      <h1>Nikmati Panorama Danau Sentani dari Puncak Bukit Tungkuwiri</h1>
+      <p>
+        Bukit Tungkuwiri di Doyo Lama, Jayapura, menawarkan hamparan bukit hijau, udara sejuk,
+        dan pemandangan Danau Sentani yang memukau. Tempat yang pas untuk sunrise, sunset,
+        dan melepas penat dari hiruk pikuk kota.
+      </p>
+
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="scrollToSection('tentang')">
+          Kenali Bukit Tungkuwiri
+        </button>
+        <button class="btn-ghost" onclick="scrollToSection('info')">
+          Rencanakan Kunjunganmu
+        </button>
+      </div>
+
+      <div class="hero-tags">
+        <span class="tag">🏞 View Danau Sentani</span>
+        <span class="tag">🌄 Sunrise & Sunset</span>
+        <span class="tag">🥾 Trekking Ringan</span>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <h3>± 20 Menit</h3>
+          <p>Dari Bandara Sentani</p>
+        </div>
+        <div class="hero-stat">
+          <h3>24 Jam</h3>
+          <p>Bisa dikunjungi kapan saja</p>
+        </div>
+        <div class="hero-stat">
+          <h3>1</h3>
+          <p>Destinasi utama, fokus di Bukit Tungkuwiri</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image-wrapper">
+      <div class="hero-image"></div>
+      <div class="hero-floating-card">
+        <p class="floating-title">Spot Foto Favorit</p>
+        <p class="floating-desc">View Danau Sentani & bukit hijau dari ketinggian.</p>
+        <p class="floating-label">Cocok untuk <span>sunrise & sunset</span></p>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- TENTANG BUKIT -->
+    <section id="tentang" class="tentang reveal">
+      <h2 class="section-title">Tentang Bukit Tungkuwiri</h2>
+      <p class="section-subtitle">
+        Bukit Tungkuwiri, yang sering juga disebut Bukit Teletubbies Jayapura, adalah bukit
+        hijau yang menghadap langsung ke Danau Sentani. Dari sini kamu bisa melihat danau,
+        pulau-pulau kecil, dan pegunungan yang mengelilinginya.
+      </p>
+
+      <div class="tentang-grid">
+        <div class="tentang-text">
+          <p>
+            Bukit ini berada di Kampung Doyo Lama, Distrik Waibu, Kabupaten Jayapura, Papua.
+            Letaknya tidak terlalu jauh dari Bandara Sentani, sehingga mudah dijangkau wisatawan
+            lokal maupun dari luar daerah.
+          </p>
+          <p>
+            Perbukitan yang bergelombang dan dipenuhi rerumputan inilah yang membuatnya mendapat
+            julukan “Bukit Teletubbies”. Di puncaknya, kamu akan disuguhi pemandangan Danau
+            Sentani yang tenang, pulau-pulau kecil di tengah danau, dan siluet Pegunungan Cycloop.
+          </p>
+          <p>
+            Bukit Tungkuwiri cocok untuk kamu yang suka hunting foto, duduk santai menikmati
+            matahari terbit atau terbenam, atau sekadar menghirup udara segar khas pegunungan.
+          </p>
+        </div>
+
+        <aside class="fakta-card">
+          <h3>Fakta Singkat</h3>
+          <ul>
+            <li><span>Lokasi:</span> Kampung Doyo Lama, Distrik Waibu, Kab. Jayapura</li>
+            <li><span>Akses:</span> ± 20–30 menit dari Bandara Sentani</li>
+            <li><span>Pemandangan:</span> Danau Sentani, pulau-pulau kecil, & Pegunungan Cycloop</li>
+            <li><span>Julukan:</span> Bukit Teletubbies Jayapura</li>
+            <li><span>Aktivitas populer:</span> Trekking ringan, foto, piknik, sunrise & sunset</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SEJARAH -->
+    <section id="sejarah" class="sejarah reveal">
+      <h2 class="section-title">Sejarah & Asal Usul Bukit Tungkuwiri</h2>
+      <p class="section-subtitle">
+        Dari bukit beralaskan alang-alang biasa, kini bertransformasi menjadi salah satu ikon
+        wisata alam Jayapura yang dikenal luas.
+      </p>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Asal Nama “Tungkuwiri”</h3>
+            <p>
+              Nama <strong>Tungkuwiri</strong> berasal dari bahasa lokal Kampung Doyo Lama.
+              Di dalam tradisi lisan setempat, kata ini berkaitan dengan sebutan untuk
+              perbukitan di kawasan ini. Seiring waktu, nama tersebut melekat sebagai
+              identitas resmi bukit ini.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Dulu Hanya Bukit Beralaskan Alang-alang</h3>
+            <p>
+              Sebelum ramai dikunjungi wisatawan, Bukit Tungkuwiri hanyalah bukit yang ditumbuhi
+              alang-alang dan jarang disinggahi. Keindahannya mulai banyak dikenal setelah
+              foto-foto panorama dari puncak bukit menyebar lewat cerita dan media sosial.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Dikembangkan Jadi Destinasi Wisata</h3>
+            <p>
+              Melihat potensi pemandangan Danau Sentani dan perbukitan hijau dari puncak,
+              masyarakat bersama pemerintah setempat mulai menata area ini. Akses jalan,
+              area parkir, dan spot foto perlahan diperbaiki sehingga pengunjung semakin nyaman.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Ikon Wisata & Lokasi Berbagai Kegiatan</h3>
+            <p>
+              Kini Bukit Tungkuwiri menjadi salah satu ikon wisata Jayapura. Bukit ini kerap
+              digunakan sebagai lokasi kegiatan, seperti pengibaran bendera saat hari besar,
+              foto prewedding, hingga tempat berkumpulnya komunitas pecinta alam dan fotografer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AKTIVITAS -->
+    <section id="aktivitas" class="aktivitas reveal">
+      <h2 class="section-title">Aktivitas di Bukit Tungkuwiri</h2>
+      <p class="section-subtitle">
+        Bukan cuma soal pemandangan, Bukit Tungkuwiri juga menawarkan beragam pengalaman
+        yang bisa kamu nikmati dalam satu kali kunjungan.
+      </p>
+
+      <div class="aktivitas-grid">
+        <article class="aktivitas-card">
+          <h3>1. Trekking Ringan ke Puncak</h3>
+          <p>
+            Jalurnya berupa tanjakan bukit berumput dengan beberapa titik landai.
+            Cocok untuk pemula yang ingin mencoba trekking sambil menikmati angin sejuk
+            dan pemandangan terbuka.
+          </p>
+        </article>
+
+        <article class="aktivitas-card">
+          <h3>2. Menikmati Sunrise & Sunset</h3>
+          <p>
+            Datang pagi buta untuk melihat matahari terbit di balik pegunungan, atau sore
+            hari untuk menikmati langit keemasan di atas Danau Sentani. Keduanya sama-sama
+            fotogenik dan sayang untuk dilewatkan.
+          </p>
+        </article>
+
+        <article class="aktivitas-card">
+          <h3>3. Hunting Foto Panorama</h3>
+          <p>
+            Dari ketinggian, kamu bisa mendapatkan foto Danau Sentani, pulau-pulau kecil
+            di tengah danau, perkampungan sekitar, hingga siluet kota di kejauhan
+            saat malam hari.
+          </p>
+        </article>
+
+        <article class="aktivitas-card">
+          <h3>4. Piknik Santai di Atas Bukit</h3>
+          <p>
+            Banyak pengunjung membawa bekal ringan untuk dinikmati di atas bukit. Selama
+            menjaga kebersihan dan tidak merusak rumput, piknik di sini bisa jadi cara
+            seru menikmati suasana alam Papua.
+          </p>
+        </article>
+      </div>
+
+      <div class="paket-mini">
+        <div class="paket-mini-card">
+          <h3>Rekomendasi Kunjungan Singkat</h3>
+          <ul>
+            <li><strong>Paket Sunrise:</strong> Berangkat subuh dari Sentani, naik ke bukit, foto sunrise, lalu turun dan sarapan di sekitar danau.</li>
+            <li><strong>Paket Sunset:</strong> Datang sore hari, nikmati sunset dan city light, lalu kembali ke kota Jayapura.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO PERJALANAN -->
+    <section id="info" class="info reveal">
+      <h2 class="section-title">Info Perjalanan ke Bukit Tungkuwiri</h2>
+      <p class="section-subtitle">
+        Gambaran singkat mengenai akses, estimasi biaya, dan hal-hal penting yang perlu
+        kamu siapkan sebelum berkunjung.
+      </p>
+
+      <div class="info-grid">
+        <div class="info-box">
+          <h3>Akses & Transportasi</h3>
+          <p>
+            Dari Bandara Sentani atau area kota Sentani, kamu bisa menuju Kampung Doyo Lama
+            dengan kendaraan roda dua atau roda empat. Waktu tempuh sekitar 20–30 menit
+            tergantung kondisi lalu lintas.
+          </p>
+          <p>
+            Setelah sampai area parkir, kamu perlu berjalan menanjak menuju puncak bukit.
+            Pastikan pakai alas kaki yang nyaman dan tidak licin.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h3>Jam Kunjungan & Tiket</h3>
+          <p>
+            Secara umum, bukit ini bisa dikunjungi hampir sepanjang hari, namun waktu terbaik
+            adalah pagi dan sore. Biasanya pengunjung dikenakan biaya terjangkau untuk tiket
+            masuk / parkir, dan bisa berubah sewaktu-waktu sesuai kebijakan pengelola.
+          </p>
+          <p>
+            Siapkan uang tunai kecil untuk membayar tiket masuk dan parkir.
+          </p>
+        </div>
+
+        <div class="info-box">
+          <h3>Tips Berkunjung</h3>
+          <ul>
+            <li>Pakai pakaian yang nyaman dan siap terkena angin kencang di puncak.</li>
+            <li>Bawa minum sendiri dan plastik sampah kecil untuk menjaga kebersihan.</li>
+            <li>Periksa cuaca; pemandangan terbaik biasanya saat langit cerah.</li>
+            <li>Hormati warga lokal dan aturan setempat saat berada di kawasan wisata.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOKASI / GOOGLE MAPS -->
+    <section id="lokasi" class="lokasi reveal">
+      <h2 class="section-title">Lokasi Bukit Tungkuwiri</h2>
+      <p class="section-subtitle">
+        Berikut lokasi Bukit Tungkuwiri (sekitar Kampung Doyo Lama, Jayapura) di Google Maps.
+        Pengunjung bisa menggunakan peta ini sebagai panduan arah dari kota Sentani maupun Jayapura.
+      </p>
+
+      <div class="lokasi-content">
+        <p>
+          Untuk panduan yang lebih akurat, kamu bisa langsung membuka lokasi ini di aplikasi
+          Google Maps dan mengaktifkan fitur navigasi. Titik lokasi di bawah bisa kamu jadikan
+          acuan saat menuju area bukit.
+        </p>
+      </div>
+
+      <div class="map-wrapper">
+        <iframe
+          class="map-iframe"
+          src="https://www.google.com/maps?q=Bukit%20Tungkuwiri%2C%20Doyo%20Lama%2C%20Jayapura&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+
+      <div class="map-actions">
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Bukit+Tungkuwiri,+Doyo+Lama,+Jayapura"
+          target="_blank"
+          rel="noopener"
+          class="btn-outline map-btn"
+        >
+          Buka di Aplikasi Google Maps
+        </a>
+      </div>
+    </section>
+
+    <!-- GALERI -->
+    <section id="galeri" class="galeri reveal">
+      <h2 class="section-title">Galeri Bukit Tungkuwiri</h2>
+      <p class="section-subtitle">
+        Beberapa suasana yang bisa kamu temukan saat berkunjung ke Bukit Tungkuwiri dan
+        kawasan Danau Sentani sekitarnya.
+      </p>
+
+      <div class="galeri-grid">
+        <figure class="galeri-item">
+          <img src="https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Bukit hijau dengan langit cerah" />
+          <figcaption>Bukit hijau dengan langit cerah di pagi hari.</figcaption>
+        </figure>
+        <figure class="galeri-item">
+          <img src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Pemandangan danau dari ketinggian" />
+          <figcaption>Pemandangan danau dari ketinggian, mirip suasana Danau Sentani.</figcaption>
+        </figure>
+        <figure class="galeri-item">
+          <img src="https://images.pexels.com/photos/1632790/pexels-photo-1632790.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Sunset di balik perbukitan" />
+          <figcaption>Sunset di balik perbukitan, cocok untuk hunting foto siluet.</figcaption>
+        </figure>
+        <figure class="galeri-item">
+          <img src="https://images.pexels.com/photos/1598074/pexels-photo-1598074.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kabut tipis di perbukitan" />
+          <figcaption>Kabut tipis yang kadang muncul di pagi hari menambah suasana dramatis.</figcaption>
+        </figure>
+        <figure class="galeri-item">
+          <img src="https://images.pexels.com/photos/210205/pexels-photo-210205.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Perahu di danau tenang" />
+          <figcaption>Perahu di danau tenang, menggambarkan suasana Danau Sentani yang damai.</figcaption>
+        </figure>
+        <figure class="galeri-item">
+          <img src="https://images.pexels.com/photos/247478/pexels-photo-247478.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Langit malam di bukit" />
+          <figcaption>Jika cuaca mendukung, langit malam di bukit bisa sangat indah.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak" class="kontak reveal">
+      <h2 class="section-title">Kontak & Rencana Kunjungan</h2>
+      <p class="section-subtitle">
+        Form ini hanya simulasi untuk membantu pengunjung merencanakan kunjungan ke Bukit Tungkuwiri.
+        Cocok untuk dijadikan contoh jika nanti ingin dikembangkan dengan backend / pemesanan asli.
+      </p>
+
+      <div class="kontak-grid">
+        <div class="kontak-info">
+          <h3>Informasi Singkat</h3>
+          <p>
+            Jika kamu ingin mengembangkan website ini lebih jauh, bagian kontak ini bisa
+            dihubungkan ke sistem pemesanan travel, WhatsApp, atau email admin.
+          </p>
+          <ul>
+            <li><span>Lokasi Acuan Maps:</span> “Bukit Tungkuwiri, Doyo Lama, Jayapura”</li>
+            <li><span>Estimasi Kunjungan:</span> 2–3 jam sudah cukup untuk naik–turun bukit dan foto-foto.</li>
+            <li><span>Cocok Untuk:</span> Solo traveler, pasangan, keluarga, dan komunitas kecil.</li>
+          </ul>
+          <p class="kontak-note">
+            <strong>Catatan:</strong> Saat ini form di samping hanya menampilkan pesan sukses
+            (simulasi) dan belum terhubung ke server mana pun.
+          </p>
+        </div>
+
+        <form id="contactForm" class="kontak-form">
+          <div class="field-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan namamu" required />
+          </div>
+
+          <div class="field-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="contoh@email.com" required />
+          </div>
+
+          <div class="field-group">
+            <label for="waktu">Perkiraan Waktu Kunjungan</label>
+            <select id="waktu" name="waktu" required>
+              <option value="">Pilih waktu...</option>
+              <option value="1-2 minggu lagi">1–2 minggu lagi</option>
+              <option value="1 bulan lagi">Sekitar 1 bulan lagi</option>
+              <option value="3 bulan lagi">Dalam 3 bulan ke depan</option>
+              <option value="belum pasti">Belum pasti, masih rencana</option>
+            </select>
+          </div>
+
+          <div class="field-group">
+            <label for="pesan">Catatan / Rencana Kunjungan</label>
+            <textarea id="pesan" name="pesan" rows="4" placeholder="Tulis rencana singkatmu, misalnya: mau datang sunrise dengan 3 orang teman..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary">Kirim (Simulasi)</button>
+          <p class="form-note">
+            Setelah tombol diklik, akan muncul pesan notifikasi sederhana di browser. Di masa depan,
+            bagian ini bisa dihubungkan ke backend sesuai kebutuhan.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> BukitTungkuwiri.id — Website informasi sederhana tentang wisata Bukit Tungkuwiri, Jayapura.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

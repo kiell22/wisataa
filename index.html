@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bukit Tungkuwiri - Wisata Jayapura Papua</title>
-  <link rel="stylesheet" href="style.css" />
+ <title>Bukit Tungkuwiri - Wisata Jayapura Papua</title>
+<link rel="stylesheet" href="style.css" />
+<link
+  rel="icon"
+  type="image/png"
+  href="assets/logo.webp"
+/>
+
 </head>
 <body>
   <header id="header">
-    <div class="logo">BukitTungkuwiri<span>.id</span></div>
+    <div class="logo" src="assets/webp">BukitTungkuwiri<span>.id</span></div>
 
     <!-- Tombol menu (muncul di mobile) -->
     <button class="nav-toggle" id="navToggle" aria-label="Buka navigasi">
@@ -77,13 +83,21 @@
     </div>
 
     <div class="hero-image-wrapper">
-      <div class="hero-image"></div>
-      <div class="hero-floating-card">
-        <p class="floating-title">Spot Foto Favorit</p>
-        <p class="floating-desc">View Danau Sentani & bukit hijau dari ketinggian.</p>
-        <p class="floating-label">Cocok untuk <span>sunrise & sunset</span></p>
-      </div>
-    </div>
+  <div class="hero-image">
+    <!-- Pakai fotomu sendiri di sini -->
+    <img
+      src="data:image/jpeg;base64,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"
+      alt="Pemandangan bukit hijau dan danau mirip Bukit Tungkuwiri dan Danau Sentani"
+    />
+  </div>
+
+  <div class="hero-floating-card">
+    <p class="floating-title">Spot Foto Favorit</p>
+    <p class="floating-desc">View Danau Sentani & bukit hijau dari ketinggian.</p>
+    <p class="floating-label">Cocok untuk <span>sunrise & sunset</span></p>
+  </div>
+</div>
+
   </section>
 
   <main>
@@ -338,27 +352,27 @@
 
       <div class="galeri-grid">
         <figure class="galeri-item">
-          <img src="https://images.pexels.com/photos/462162/pexels-photo-462162.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Bukit hijau dengan langit cerah" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4UpGLd7RSxwxY9Hx46EaqRbNw_4mdyEqKmh5AGKkeDb641dOs7TUOXJa9uAyEeNktSB8&usqp=CAU" alt="Bukit hijau dengan langit cerah" />
           <figcaption>Bukit hijau dengan langit cerah di pagi hari.</figcaption>
         </figure>
         <figure class="galeri-item">
-          <img src="https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Pemandangan danau dari ketinggian" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgeDnz-7z5jOS1xPuEr_1DPDXUg5Oa-zSxQ&s" alt="Pemandangan danau dari ketinggian" />
           <figcaption>Pemandangan danau dari ketinggian, mirip suasana Danau Sentani.</figcaption>
         </figure>
         <figure class="galeri-item">
-          <img src="https://images.pexels.com/photos/1632790/pexels-photo-1632790.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Sunset di balik perbukitan" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBQ1TiPatNz3Il9SS8E5yE5QWN4Sennzb-YQ&s" alt="Sunset di balik perbukitan" />
           <figcaption>Sunset di balik perbukitan, cocok untuk hunting foto siluet.</figcaption>
         </figure>
         <figure class="galeri-item">
-          <img src="https://images.pexels.com/photos/1598074/pexels-photo-1598074.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Kabut tipis di perbukitan" />
+          <img src="    https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStn02-hIVkk0Wwis45d6oYbZv_G3sK_BQwSA&s" alt="Kabut tipis di perbukitan" />
           <figcaption>Kabut tipis yang kadang muncul di pagi hari menambah suasana dramatis.</figcaption>
         </figure>
         <figure class="galeri-item">
-          <img src="https://images.pexels.com/photos/210205/pexels-photo-210205.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Perahu di danau tenang" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTir-xiWLVc5KA_A90Dlh7sBYHcgq5Kny9SEQ&s" alt="Perahu di danau tenang" />
           <figcaption>Perahu di danau tenang, menggambarkan suasana Danau Sentani yang damai.</figcaption>
         </figure>
         <figure class="galeri-item">
-          <img src="https://images.pexels.com/photos/247478/pexels-photo-247478.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Langit malam di bukit" />
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2MWwGyy0whbyoyWnO8e8IBtKCVjzeDiowCw&s" alt="Langit malam di bukit" />
           <figcaption>Jika cuaca mendukung, langit malam di bukit bisa sangat indah.</figcaption>
         </figure>
       </div>

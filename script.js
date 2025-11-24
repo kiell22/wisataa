@@ -14,13 +14,20 @@ const navToggle = document.getElementById("navToggle");
 // Scroll halus untuk link di navbar + tutup menu mobile setelah klik
 document.querySelectorAll("nav a").forEach((link) => {
   link.addEventListener("click", (e) => {
-    e.preventDefault();
-    const href = link.getAttribute("href").replace("#", "");
-    scrollToSection(href);
-    // tutup menu di mobile
+    const href = link.getAttribute("href");
+
+    // Jika link hanya ke ID di halaman yang sama (misal "#destinasi")
+    if (href && href.startsWith("#")) {
+      e.preventDefault();
+      const targetId = href.replace("#", "");
+      scrollToSection(targetId);
+    }
+
+    // Tutup menu mobile (apapun link-nya)
     header.classList.remove("nav-open");
   });
 });
+
 
 // Toggle hamburger (mobile)
 if (navToggle) {

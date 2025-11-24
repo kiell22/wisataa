@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pantai Kupang - Wisata Jayapura Papua</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/logo.png" />
+</head>
+<body>
+  <header id="header">
+    <div class="brand">
+      <img src="assets/logo.webp" alt="Logo Wisata Jayapura" class="logo-mark" />
+      <div class="logo">WisataJayapura<span>.id</span></div>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Buka navigasi">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav>
+      <ul>
+        <li><a href="index.html#hero">Beranda</a></li>
+        <li><a href="index.html#destinasi">Destinasi</a></li>
+        <li><a href="index.html#tentang">Tentang</a></li>
+        <li><a href="index.html#lokasi">Lokasi</a></li>
+        <li><a href="index.html#galeri">Galeri</a></li>
+        <li><a href="index.html#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO KHUSUS PANTAI KUPANG -->
+  <section class="hero reveal" id="hero">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span>🏖</span>
+        <span>Pantai Kupang • Sekitar Jayapura</span>
+      </div>
+      <h1>Pantai Kupang, Pilihan Pantai Tenang untuk Menyendiri dan Bersantai</h1>
+      <p>
+        Pantai Kupang menjadi pilihan bagi kamu yang mencari suasana lebih sepi dibanding
+        pantai utama di kota. Ombaknya relatif tenang, dengan garis pantai yang bersih dan
+        deretan perahu nelayan yang menambah nuansa khas pesisir Papua.
+      </p>
+
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="window.location.href='index.html#destinasi'">
+          Kembali ke Daftar Destinasi
+        </button>
+        <button class="btn-ghost" onclick="scrollToSection('detail-kupang')">
+          Lihat Informasi Detail
+        </button>
+      </div>
+
+      <div class="hero-tags">
+        <span class="tag">Pantai Tenang</span>
+        <span class="tag">Suasana Sepi</span>
+        <span class="tag">Spot Foto Perahu</span>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <h3>Lebih Sepi</h3>
+          <p>Cocok untuk yang ingin santai</p>
+        </div>
+        <div class="hero-stat">
+          <h3>Pantai</h3>
+          <p>Bermain air & jalan di tepi pantai</p>
+        </div>
+        <div class="hero-stat">
+          <h3>Wisata Harian</h3>
+          <p>Cukup 1–2 jam kunjungan</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image-wrapper">
+      <div class="hero-image">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Suasana Pantai Kupang dengan laut tenang"
+        />
+      </div>
+      <div class="hero-floating-card">
+        <p class="floating-title">Suasana Lebih Tenang</p>
+        <p class="floating-desc">
+          Ideal untuk duduk di tepi pantai, mendengarkan suara ombak, dan menikmati angin laut.
+        </p>
+        <p class="floating-label">Cocok untuk <span>me time & refleksi</span></p>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- DETAIL PANTAI KUPANG -->
+    <section class="tentang reveal" id="detail-kupang">
+      <h2 class="section-title">Tentang Pantai Kupang</h2>
+      <p class="section-subtitle">
+        Pantai dengan suasana lebih tenang dan alami, cocok untuk pengunjung yang tidak suka
+        keramaian dan ingin menikmati pantai dengan ritme yang lebih pelan.
+      </p>
+
+      <div class="tentang-grid">
+        <div class="tentang-text">
+          <p>
+            Pantai Kupang berada di wilayah yang tidak terlalu jauh dari Kota Jayapura, namun
+            suasananya cenderung lebih sepi dibanding beberapa pantai populer lainnya.
+            Hal ini membuat Pantai Kupang terasa lebih pribadi dan santai.
+          </p>
+          <p>
+            Di sepanjang pantai kamu akan menemukan pasir yang lembut, air laut yang cukup
+            jernih, serta perahu-perahu nelayan yang bersandar. Pemandangan ini memberikan
+            nuansa khas kampung pesisir dengan aktivitas masyarakat lokal.
+          </p>
+          <p>
+            Pengunjung biasanya datang untuk sekadar duduk santai di tepi pantai, berjalan di
+            sepanjang garis pantai, atau mengambil foto suasana laut dan perahu. Jika datang
+            pagi atau sore hari, suhu udara cenderung lebih bersahabat.
+          </p>
+          <p>
+            Karena fasilitas wisata di Pantai Kupang belum terlalu banyak, ada baiknya kamu
+            membawa bekal sendiri dan tetap menjaga kebersihan area pantai selama berkunjung.
+          </p>
+        </div>
+
+        <aside class="fakta-card">
+          <h3>Info Singkat Pantai Kupang</h3>
+          <ul>
+            <li><span>Karakter:</span> Pantai tenang dengan suasana alami.</li>
+            <li><span>Aktivitas:</span> Jalan santai, foto, menikmati pemandangan.</li>
+            <li><span>Waktu ideal:</span> Pagi hari atau menjelang sore.</li>
+            <li><span>Perlengkapan:</span> Bekal makanan/minuman & alas duduk.</li>
+            <li><span>Peringatan:</span> Selalu cek kondisi ombak sebelum berenang.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SEJARAH & LOKASI PANTAI KUPANG -->
+    <section class="lokasi reveal" id="lokasi-kupang">
+      <h2 class="section-title">Sejarah & Lokasi Pantai Kupang</h2>
+      <p class="section-subtitle">
+        Pantai yang berkembang dari kawasan nelayan sederhana menjadi destinasi alternatif
+        bagi wisatawan yang mencari ketenangan.
+      </p>
+
+      <div class="lokasi-content">
+        <p>
+          Kawasan sekitar <strong>Pantai Kupang</strong> pada awalnya lebih dikenal sebagai
+          area aktivitas nelayan dan warga lokal. Garis pantai yang cukup landai dan
+          keberadaan perahu-perahu kecil menjadikan tempat ini titik singgah sehari-hari
+          bagi masyarakat pesisir.
+        </p>
+        <p>
+          Seiring semakin berkembangnya akses jalan dan informasi wisata, Pantai Kupang
+          mulai dilirik sebagai destinasi alternatif selain pantai utama di kota. Ketenangan
+          suasananya justru menjadi daya tarik tersendiri bagi pengunjung yang ingin
+          menikmati pantai tanpa keramaian.
+        </p>
+        <p>
+          Sampai sekarang, nuansa kampung nelayan masih terasa kuat di area ini, sehingga
+          pengunjung bisa merasakan kombinasi antara wisata alam dan aktivitas masyarakat
+          pesisir dalam satu kunjungan.
+        </p>
+      </div>
+
+      <div class="map-wrapper">
+        <iframe
+          class="map-iframe"
+          src="https://www.google.com/maps?q=Pantai%20Kupang%2C%20Jayapura&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+
+      <div class="map-actions">
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Pantai+Kupang,+Jayapura"
+          target="_blank"
+          rel="noopener"
+          class="btn-outline map-btn"
+        >
+          Buka Pantai Kupang di Google Maps
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> WisataJayapura.id — Informasi destinasi wisata Jayapura, Papua.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

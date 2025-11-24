@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jembatan Merah - Wisata Jayapura Papua</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/logo.png" />
+</head>
+<body>
+  <header id="header">
+    <div class="brand">
+      <img src="assets/logo.webp" alt="Logo Wisata Jayapura" class="logo-mark" />
+      <div class="logo">WisataJayapura<span>.id</span></div>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Buka navigasi">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav>
+      <ul>
+        <li><a href="index.html#hero">Beranda</a></li>
+        <li><a href="index.html#destinasi">Destinasi</a></li>
+        <li><a href="index.html#tentang">Tentang</a></li>
+        <li><a href="index.html#lokasi">Lokasi</a></li>
+        <li><a href="index.html#galeri">Galeri</a></li>
+        <li><a href="index.html#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO KHUSUS JEMBATAN MERAH -->
+  <section class="hero reveal" id="hero">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span>🌉</span>
+        <span>Jembatan Merah • Ikon Teluk Jayapura</span>
+      </div>
+      <h1>Jembatan Merah, Ikon Modern di Atas Teluk Jayapura</h1>
+      <p>
+        Jembatan Merah menghubungkan wilayah di sekitar Teluk Jayapura dan menjadi salah
+        satu ikon kota. Pemandangan lampu kota dan bayangan jembatan di atas air membuat
+        tempat ini sangat menarik, terutama saat malam hari.
+      </p>
+
+      <div class="hero-cta">
+        <button class="btn-primary" onclick="window.location.href='index.html#destinasi'">
+          Kembali ke Daftar Destinasi
+        </button>
+        <button class="btn-ghost" onclick="scrollToSection('detail-jembatan')">
+          Lihat Informasi Detail
+        </button>
+      </div>
+
+      <div class="hero-tags">
+        <span class="tag">Ikon Kota</span>
+        <span class="tag">Night View</span>
+        <span class="tag">Foto Perkotaan</span>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <h3>Malam Hari</h3>
+          <p>Waktu favorit pengunjung</p>
+        </div>
+        <div class="hero-stat">
+          <h3>Teluk</h3>
+          <p>View air & lampu kota</p>
+        </div>
+        <div class="hero-stat">
+          <h3>Spot Foto</h3>
+          <p>Cocok untuk konten media sosial</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-image-wrapper">
+      <div class="hero-image">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Jembatan di atas teluk pada malam hari"
+        />
+      </div>
+      <div class="hero-floating-card">
+        <p class="floating-title">Ikon Kota Jayapura</p>
+        <p class="floating-desc">
+          Lampu jembatan dan kota yang memantul di permukaan air menciptakan pemandangan dramatis.
+        </p>
+        <p class="floating-label">Cocok untuk <span>night photography</span></p>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- DETAIL JEMBATAN MERAH -->
+    <section class="tentang reveal" id="detail-jembatan">
+      <h2 class="section-title">Tentang Jembatan Merah</h2>
+      <p class="section-subtitle">
+        Jembatan yang tidak hanya berfungsi sebagai penghubung transportasi, tetapi juga
+        menjadi wajah modern Kota Jayapura di mata wisatawan.
+      </p>
+
+      <div class="tentang-grid">
+        <div class="tentang-text">
+          <p>
+            Jembatan Merah dibangun untuk mempermudah mobilitas di kawasan Teluk Jayapura,
+            sekaligus menjadi elemen visual yang memperindah wajah kota. Dari sini, kamu
+            dapat melihat pemandangan teluk, perahu, serta permukiman di sekitarnya.
+          </p>
+          <p>
+            Di malam hari, lampu-lampu yang menghiasi jembatan dan bangunan di sekitarnya
+            akan menyala, menciptakan refleksi di permukaan air. Inilah momen yang sering
+            dimanfaatkan fotografer dan pengunjung untuk mengabadikan suasana.
+          </p>
+          <p>
+            Selain berjalan kaki di area trotoar, pengunjung juga bisa menikmati pemandangan
+            teluk dari beberapa titik di sekitar jembatan. Dari kejauhan, bentuk jembatan
+            dan lampunya tampak sangat mencolok di antara gelapnya langit dan laut.
+          </p>
+          <p>
+            Sebagai ikon kota, Jembatan Merah sering dijadikan latar belakang foto bersama
+            keluarga, teman, maupun pasangan. Pastikan tetap berhati-hati saat berfoto dan
+            selalu mematuhi aturan keselamatan di sekitar jembatan.
+          </p>
+        </div>
+
+        <aside class="fakta-card">
+          <h3>Info Singkat Jembatan Merah</h3>
+          <ul>
+            <li><span>Fungsi:</span> Penghubung kawasan di sekitar Teluk Jayapura.</li>
+            <li><span>Daya tarik:</span> Lampu malam hari & view teluk.</li>
+            <li><span>Aktivitas:</span> Jalan santai, foto, menikmati pemandangan kota.</li>
+            <li><span>Waktu ideal:</span> Sore menjelang malam hingga malam hari.</li>
+            <li><span>Tips:</span> Gunakan pakaian yang nyaman dan tetap waspada lalu lintas.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SEJARAH & LOKASI JEMBATAN MERAH -->
+    <section class="lokasi reveal" id="lokasi-jembatan">
+      <h2 class="section-title">Sejarah & Lokasi Jembatan Merah</h2>
+      <p class="section-subtitle">
+        Jembatan yang dibangun untuk kebutuhan transportasi ini perlahan berkembang menjadi
+        salah satu simbol perkembangan kota di Jayapura.
+      </p>
+
+      <div class="lokasi-content">
+        <p>
+          Pembangunan <strong>Jembatan Merah</strong> dilatarbelakangi kebutuhan untuk
+          menghubungkan area di sekitar Teluk Jayapura agar mobilitas barang dan orang
+          menjadi lebih efisien. Sebelum ada jembatan ini, akses di kawasan tersebut
+          relatif lebih terbatas.
+        </p>
+        <p>
+          Seiring berjalannya waktu, bentuk konstruksi dan warna jembatan yang mencolok
+          menjadikannya mudah dikenali. Ditambah lagi, posisinya yang berada tepat di atas
+          teluk membuat Jembatan Merah sering muncul dalam foto-foto yang menggambarkan
+          wajah Kota Jayapura.
+        </p>
+        <p>
+          Kini, jembatan ini tidak hanya dilihat sebagai infrastruktur, tetapi juga sebagai
+          latar belakang penting dalam identitas visual kota. Lampu-lampu yang menghiasi
+          jembatan pada malam hari menambah kesan modern di tengah bentang alam Papua.
+        </p>
+      </div>
+
+      <div class="map-wrapper">
+        <iframe
+          class="map-iframe"
+          src="https://www.google.com/maps?q=Jembatan%20Merah%2C%20Jayapura&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen=""
+        ></iframe>
+      </div>
+
+      <div class="map-actions">
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Jembatan+Merah,+Jayapura"
+          target="_blank"
+          rel="noopener"
+          class="btn-outline map-btn"
+        >
+          Buka Jembatan Merah di Google Maps
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> WisataJayapura.id — Informasi destinasi wisata Jayapura, Papua.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -76,6 +76,20 @@ header.scrolled {
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.6);
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.7);
+}
+
 .logo {
   font-weight: 700;
   font-size: 1.1rem;
@@ -281,29 +295,14 @@ header.nav-open .nav-toggle span:nth-child(3) {
   overflow: hidden;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
   animation: floatHero 7s ease-in-out infinite;
-  background: #020617; /* cadangan kalau gambar belum load */
+  background: #020617;
 }
 
-/* Tambahkan ini untuk gambar di dalam hero-image */
 .hero-image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-}
-
-
-.hero-image::after {
-  content: "Area Danau Sentani, Jayapura";
-  position: absolute;
-  left: 1rem;
-  bottom: 1rem;
-  background: rgba(15, 23, 42, 0.85);
-  padding: 0.4rem 0.8rem;
-  border-radius: 999px;
-  font-size: 0.8rem;
-  color: #e5e7eb;
-  border: 1px solid rgba(148, 163, 184, 0.6);
 }
 
 .hero-floating-card {
@@ -334,10 +333,102 @@ header.nav-open .nav-toggle span:nth-child(3) {
   font-weight: 600;
 }
 
+/* ===== DESTINASI ===== */
+
+.destinasi {
+  margin-top: 2.8rem;
+}
+
+.destinasi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.6rem;
+}
+
+.card {
+  background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 0.96));
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(15, 23, 42, 0.8);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border 0.15s ease;
+  border: 1px solid rgba(55, 65, 81, 0.9);
+  position: relative;
+}
+
+.card-badge {
+  position: absolute;
+  top: 0.7rem;
+  left: 0.7rem;
+  background: rgba(250, 204, 21, 0.95);
+  color: #111827;
+  font-size: 0.75rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  z-index: 1;
+  font-weight: 600;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 22px 55px rgba(15, 23, 42, 1);
+  border-color: rgba(250, 204, 21, 0.7);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1rem 1.1rem 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.card-location {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #9ca3af;
+}
+
+.card-title {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.card-desc {
+  font-size: 0.86rem;
+  color: #d1d5db;
+  flex: 1;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+.chip {
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.16);
+  color: #bfdbfe;
+  font-size: 0.75rem;
+  border: 1px solid rgba(59, 130, 246, 0.7);
+}
+
 /* ===== TENTANG ===== */
 
 .tentang {
-  margin-top: 2.8rem;
+  margin-top: 3.2rem;
 }
 
 .tentang-grid {
@@ -374,128 +465,6 @@ header.nav-open .nav-toggle span:nth-child(3) {
 
 .fakta-card li span {
   font-weight: 600;
-}
-
-/* ===== SEJARAH / TIMELINE ===== */
-
-.sejarah {
-  margin-top: 3.2rem;
-}
-
-.timeline {
-  position: relative;
-  margin-top: 1rem;
-  padding-left: 1.2rem;
-  border-left: 1px solid rgba(75, 85, 99, 0.8);
-}
-
-.timeline-item {
-  position: relative;
-  padding-left: 1.1rem;
-  margin-bottom: 1.4rem;
-}
-
-.timeline-dot {
-  width: 0.55rem;
-  height: 0.55rem;
-  border-radius: 999px;
-  background: #facc15;
-  position: absolute;
-  left: -0.32rem;
-  top: 0.4rem;
-}
-
-.timeline-content h3 {
-  font-size: 1.02rem;
-  margin-bottom: 0.25rem;
-}
-
-.timeline-content p {
-  font-size: 0.88rem;
-  color: #d1d5db;
-}
-
-/* ===== AKTIVITAS ===== */
-
-.aktivitas {
-  margin-top: 3.2rem;
-}
-
-.aktivitas-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1.3rem;
-}
-
-.aktivitas-card {
-  background: rgba(15, 23, 42, 0.96);
-  border-radius: 1.1rem;
-  padding: 1rem 1.1rem 1.1rem;
-  border: 1px solid rgba(55, 65, 81, 0.9);
-  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.9);
-  font-size: 0.88rem;
-}
-
-.aktivitas-card h3 {
-  font-size: 1rem;
-  margin-bottom: 0.3rem;
-}
-
-.paket-mini {
-  margin-top: 1.8rem;
-  display: flex;
-  justify-content: center;
-}
-
-.paket-mini-card {
-  max-width: 680px;
-  width: 100%;
-  background: rgba(15, 23, 42, 0.96);
-  border-radius: 1.3rem;
-  padding: 1.1rem 1.2rem 1.2rem;
-  border: 1px solid rgba(55, 65, 81, 0.9);
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
-  font-size: 0.86rem;
-}
-
-.paket-mini-card ul {
-  margin-top: 0.4rem;
-  padding-left: 1.1rem;
-  display: grid;
-  gap: 0.3rem;
-}
-
-/* ===== INFO PERJALANAN ===== */
-
-.info {
-  margin-top: 3.2rem;
-}
-
-.info-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.2rem;
-}
-
-.info-box {
-  background: rgba(15, 23, 42, 0.95);
-  border-radius: 1.1rem;
-  padding: 1rem 1.1rem 1.1rem;
-  border: 1px solid rgba(55, 65, 81, 0.85);
-  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.85);
-  font-size: 0.86rem;
-}
-
-.info-box h3 {
-  font-size: 1rem;
-  margin-bottom: 0.4rem;
-}
-
-.info-box ul {
-  margin-top: 0.4rem;
-  padding-left: 1.1rem;
-  display: grid;
-  gap: 0.2rem;
 }
 
 /* ===== LOKASI / GOOGLE MAPS ===== */
@@ -707,9 +676,9 @@ footer {
     grid-template-columns: 1fr;
   }
 
-  .aktivitas-grid,
-  .info-grid,
-  .galeri-grid {
+  .destinasi-grid,
+  .galeri-grid,
+  .info-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -763,8 +732,7 @@ footer {
     padding: 2rem 1rem 2.5rem;
   }
 
-  .aktivitas-grid,
-  .info-grid,
+  .destinasi-grid,
   .galeri-grid {
     grid-template-columns: 1fr;
   }
